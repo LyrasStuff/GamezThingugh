@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://l5jh0rr7v56v"]
+
+[ext_resource type="Texture2D" uid="uid://cn51pj02q1jqr" path="res://icon.svg" id="1_la1h0"]
+[ext_resource type="Script" uid="uid://cbsux8x2jwath" path="res://Assets/Scripts/character_movements.gd" id="1_pjqk0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 44.102154
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1130332835]
+script = ExtResource("1_pjqk0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=415334172]
+scale = Vector2(0.71875, 0.71875)
+texture = ExtResource("1_la1h0")
+
+[node name="CoyoteTimer" type="Timer" parent="." unique_id=805591058]
+wait_time = 0.1
+one_shot = true
+
+[node name="JumpBufferTimer" type="Timer" parent="." unique_id=65865718]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1043753305]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_g4v7s")
