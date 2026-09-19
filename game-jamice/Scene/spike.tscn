@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://djkh6b2stw63e"]
+
+[ext_resource type="Texture2D" uid="uid://bux56fkl27523" path="res://Assets/Sprites/PlatformerTilesetTemplate_Tileset.png" id="1_406ys"]
+
+[node name="spike" type="StaticBody2D" unique_id=1148524638]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=526333704]
+position = Vector2(4, 0)
+scale = Vector2(0.41666666, 1)
+texture = ExtResource("1_406ys")
+region_enabled = true
+region_rect = Rect2(180, 82, 12, 12)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1770030643]
+position = Vector2(8.70042, 0.0021652803)
+rotation = 1.5707964
+scale = Vector2(1.0003608, 0.4500701)
+texture = ExtResource("1_406ys")
+region_enabled = true
+region_rect = Rect2(180, 82, 12, 12)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=253377304]
+polygon = PackedVector2Array(6, -6, 8, -4, 9, -1, 9.1996, -0.001329422, 10, 2, 11, 3, 11, 4, 11, 6, 2, 6, 2, 4, 2, 3, 3, 1, 5, -5)
