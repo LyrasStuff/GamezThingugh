@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bepeol3kslbu"]
+
+[ext_resource type="Texture2D" uid="uid://cn51pj02q1jqr" path="res://icon.svg" id="1_l3s0w"]
+
+[sub_resource type="Gradient" id="Gradient_l3s0w"]
+offsets = PackedFloat32Array(0.3493976, 0.7710843)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g4v7s"]
+gradient = SubResource("Gradient_l3s0w")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="Sun" type="Node2D" unique_id=174981267]
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=10041952]
+scale = Vector2(11.796875, 11.43758)
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_g4v7s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1808154632]
+light_mask = 2
+position = Vector2(-1.7763568e-15, 0)
+scale = Vector2(0.7695313, 0.7460938)
+texture = ExtResource("1_l3s0w")
