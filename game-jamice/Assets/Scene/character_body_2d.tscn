@@ -3,18 +3,42 @@
 [ext_resource type="Script" uid="uid://cbsux8x2jwath" path="res://Assets/Scripts/character_movements.gd" id="1_pjqk0"]
 [ext_resource type="Texture2D" uid="uid://84iac5508noq" path="res://Assets/Sprites/Sprite-0002-Sheet.png" id="2_pjqk0"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjqk0"]
+atlas = ExtResource("2_pjqk0")
+region = Rect2(48, 32, 48, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_jki4e"]
 atlas = ExtResource("2_pjqk0")
 region = Rect2(48, 0, 48, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_4utq0"]
+atlas = ExtResource("2_pjqk0")
+region = Rect2(48, 16, 48, 16)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjqk0")
+}],
+"loop": 1,
+"name": &"Jump",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jki4e")
 }],
 "loop": 1,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4utq0")
+}],
+"loop": 1,
+"name": &"run",
 "speed": 5.0
 }]
 
@@ -33,6 +57,7 @@ wait_time = 0.1
 one_shot = true
 
 [node name="JumpBufferTimer" type="Timer" parent="." unique_id=65865718]
+wait_time = 0.016
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1043753305]
 position = Vector2(0, 2)
