@@ -284,4 +284,6 @@ tile_set = SubResource("TileSet_kr64j")
 position = Vector2(501, 461)
 
 [node name="Sun" parent="." unique_id=174981267 instance=ExtResource("3_2q7uc")]
-position = Vector2(523, 320)
+position = Vector2(534, 319)
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=919215594]
