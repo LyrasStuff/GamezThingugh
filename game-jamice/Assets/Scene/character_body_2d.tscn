@@ -22,3 +22,5 @@ one_shot = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1043753305]
 position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1691395145]
