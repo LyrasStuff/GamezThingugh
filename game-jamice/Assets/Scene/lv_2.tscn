@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dktsnmvqfob0s" path="res://Assets/Scene/lv_2.gd" id="1_e7lgy"]
 [ext_resource type="PackedScene" uid="uid://l5jh0rr7v56v" path="res://Assets/Scene/character_body_2d.tscn" id="2_ruygb"]
 [ext_resource type="PackedScene" uid="uid://dlblqwspdxt6x" path="res://Assets/Scene/killzone.tscn" id="3_pxeqt"]
+[ext_resource type="PackedScene" uid="uid://c2quam205kyxq" path="res://Assets/Scene/spike.tscn" id="5_ifebt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ruygb"]
 texture = ExtResource("1_1lil0")
@@ -235,7 +236,7 @@ tile_map_data = PackedByteArray("AAAEABQAAAAAAAAAAAAFABQAAAAAAAAAAAAGABQAAAAAAAA
 tile_set = SubResource("TileSet_8y727")
 
 [node name="CharacterBody2D" parent="." unique_id=1130332835 instance=ExtResource("2_ruygb")]
-position = Vector2(104, 305)
+position = Vector2(99, 311)
 
 [node name="killzone" parent="." unique_id=183546736 instance=ExtResource("3_pxeqt")]
 position = Vector2(205, 378)
@@ -248,5 +249,29 @@ shape = SubResource("WorldBoundaryShape2D_d20xd")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1045139564]
 position = Vector2(12, 52)
 shape = SubResource("RectangleShape2D_d20xd")
+
+[node name="spike" parent="." unique_id=1348715250 instance=ExtResource("5_ifebt")]
+position = Vector2(143, 310)
+scale = Vector2(2, 2)
+
+[node name="spike2" parent="." unique_id=608515624 instance=ExtResource("5_ifebt")]
+position = Vector2(704, 262)
+scale = Vector2(2, 2)
+
+[node name="spike3" parent="." unique_id=116941227 instance=ExtResource("5_ifebt")]
+position = Vector2(894, 247)
+scale = Vector2(2, 2)
+
+[node name="spike4" parent="." unique_id=872513242 instance=ExtResource("5_ifebt")]
+position = Vector2(446, 166)
+scale = Vector2(2, 2)
+
+[node name="spike5" parent="." unique_id=466048714 instance=ExtResource("5_ifebt")]
+position = Vector2(257, 260)
+scale = Vector2(2, 2)
+
+[node name="spike6" parent="." unique_id=316370121 instance=ExtResource("5_ifebt")]
+position = Vector2(129, 101)
+scale = Vector2(2, 2)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
