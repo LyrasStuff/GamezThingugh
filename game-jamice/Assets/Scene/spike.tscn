@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c2quam205kyxq"]
+
+[ext_resource type="Texture2D" uid="uid://bux56fkl27523" path="res://Assets/Sprites/PlatformerTilesetTemplate_Tileset.png" id="1_0quqw"]
+[ext_resource type="PackedScene" uid="uid://c0e8q0rhw7wim" path="res://Assets/Scene/spikekillzone.tscn" id="2_3al1l"]
+
+[node name="spike" type="StaticBody2D" unique_id=1348715250]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1789311552]
+position = Vector2(0.75, 0)
+scale = Vector2(0.2, 0.7)
+texture = ExtResource("1_0quqw")
+region_enabled = true
+region_rect = Rect2(179, 82, 13, 13)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=713370593]
+position = Vector2(3, 5.684342e-14)
+rotation = 1.5707964
+scale = Vector2(0.7, 0.2)
+texture = ExtResource("1_0quqw")
+region_enabled = true
+region_rect = Rect2(179, 82, 13, 13)
+
+[node name="killzone" parent="." unique_id=183546736 instance=ExtResource("2_3al1l")]
+position = Vector2(-5, 3)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="killzone" unique_id=2072953036]
+position = Vector2(6, -4)
+polygon = PackedVector2Array(1, -3, 3, 5, -1, 5)
