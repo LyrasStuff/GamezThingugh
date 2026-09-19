@@ -11,7 +11,7 @@ var gravity: float = 12.0
 const MAX_GRAVITY: float = 14.5
 const FALL_GRAVITY: float = 20
 
-var MAX_SPEED: float = 50
+var MAX_SPEED: float = 150
 const R_SPEED: float = 150
 var ACCELERATION: float = 8
 const FRICTION: float = 15
