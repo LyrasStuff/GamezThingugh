@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ptc1owmxp23j"]
+
+[ext_resource type="Texture2D" uid="uid://b6emo8gfa4tyo" path="res://Assets/Sprites/TilemapIce.png" id="1_u2wut"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d20xd"]
+size = Vector2(8, 16)
+
+[node name="Node2D" type="Node2D" unique_id=407339529]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=126762498]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=188835068]
+shape = SubResource("RectangleShape2D_d20xd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=87322553]
+texture = ExtResource("1_u2wut")
+region_enabled = true
+region_rect = Rect2(-0.2931671, 0.0121154785, 8.834892, 16.243206)
