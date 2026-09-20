@@ -72,3 +72,9 @@ func _physics_process(delta: float) -> void:
 	velocity.y += gravity
 
 	move_and_slide()
+
+
+#Back to menu
+func _process(event):
+	if Input.is_action_just_pressed("menu"):
+		get_tree().change_scene_to_file("res://Assets/Scene/main_menu.tscn")
