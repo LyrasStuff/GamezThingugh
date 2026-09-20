@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dbom35jlbormu"]
+
+[ext_resource type="Texture2D" uid="uid://b6emo8gfa4tyo" path="res://Assets/Sprites/TilemapIce.png" id="2_5rpmb"]
+[ext_resource type="Script" uid="uid://b71hylk23p5k5" path="res://area.gd" id="2_hguma"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yeiif"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vnn0b"]
+size = Vector2(48, 18)
+
+[node name="JUMPAD" type="Node2D" unique_id=1303307286]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=262730738]
+texture = ExtResource("2_5rpmb")
+region_enabled = true
+region_rect = Rect2(0, 0, 48, 16)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1286516039]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1905446588]
+shape = SubResource("RectangleShape2D_yeiif")
+
+[node name="area" type="Area2D" parent="." unique_id=1706433713]
+script = ExtResource("2_hguma")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area" unique_id=67450284]
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_vnn0b")
+
+[connection signal="area_entered" from="area" to="area" method="_on_area_entered"]

@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://bnt6ydaog2b84"]
+
+[ext_resource type="Texture2D" uid="uid://b6emo8gfa4tyo" path="res://Assets/Sprites/TilemapIce.png" id="1_nkol8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yeiif"]
+size = Vector2(80, 80)
+
+[node name="BIGPLAT" type="AnimatableBody2D" unique_id=1652466018]
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=113686474]
+position = Vector2(32, 0)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1264971815]
+position = Vector2(16, 0)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=781962971]
+position = Vector2(48, 0)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=553136441]
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=853994853]
+position = Vector2(64, 0)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(32, 0, 16, 16)
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=2006930140]
+position = Vector2(64, 16)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=1575561703]
+position = Vector2(48, 16)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D8" type="Sprite2D" parent="." unique_id=1267760737]
+position = Vector2(32, 16)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D9" type="Sprite2D" parent="." unique_id=1956083209]
+position = Vector2(16, 16)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D10" type="Sprite2D" parent="." unique_id=2009565171]
+position = Vector2(0, 16)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D11" type="Sprite2D" parent="." unique_id=2069058341]
+position = Vector2(0, 32)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D12" type="Sprite2D" parent="." unique_id=701634457]
+position = Vector2(0, 48)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D13" type="Sprite2D" parent="." unique_id=2132248037]
+position = Vector2(0, 64)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D14" type="Sprite2D" parent="." unique_id=1918187298]
+position = Vector2(64, 32)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D15" type="Sprite2D" parent="." unique_id=377516591]
+position = Vector2(64, 48)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D16" type="Sprite2D" parent="." unique_id=683675735]
+position = Vector2(64, 64)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D17" type="Sprite2D" parent="." unique_id=31757693]
+position = Vector2(48, 64)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D18" type="Sprite2D" parent="." unique_id=1598250897]
+position = Vector2(16, 64)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D19" type="Sprite2D" parent="." unique_id=686871828]
+position = Vector2(32, 64)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D20" type="Sprite2D" parent="." unique_id=296511544]
+position = Vector2(16, 48)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D21" type="Sprite2D" parent="." unique_id=697594682]
+position = Vector2(32, 48)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D22" type="Sprite2D" parent="." unique_id=1357304628]
+position = Vector2(48, 48)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D23" type="Sprite2D" parent="." unique_id=1274789627]
+position = Vector2(16, 32)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D24" type="Sprite2D" parent="." unique_id=1152693888]
+position = Vector2(32, 32)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D25" type="Sprite2D" parent="." unique_id=1614574762]
+position = Vector2(48, 32)
+texture = ExtResource("1_nkol8")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1547758380]
+position = Vector2(32, 32)
+shape = SubResource("RectangleShape2D_yeiif")
