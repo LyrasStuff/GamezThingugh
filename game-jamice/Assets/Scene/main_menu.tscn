@@ -15,7 +15,7 @@ offset_bottom = 507.0
 theme_override_colors/font_color = Color(0.18039216, 0.5568628, 1, 1)
 theme_override_colors/font_shadow_color = Color(0.043137256, 0.019607844, 0, 1)
 theme_override_font_sizes/font_size = 50
-text = "Ice Man: Outta the ice box"
+text = "Ice Man: Outta The Ice Box"
 horizontal_alignment = 1
 vertical_alignment = 1
 
