@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci1gqrsdafsm5"
-path="res://.godot/imported/Canon and fireball.png-b5aff5b1319e576812bcbb250153cc82.ctex"
+uid="uid://by2u2n5bkasm7"
+path="res://.godot/imported/Background-DM.png-569f512eb7336715864afe6cd1baad9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Canon and fireball.png"
-dest_files=["res://.godot/imported/Canon and fireball.png-b5aff5b1319e576812bcbb250153cc82.ctex"]
+source_file="res://Assets/Background-DM.png"
+dest_files=["res://.godot/imported/Background-DM.png-569f512eb7336715864afe6cd1baad9c.ctex"]
 
 [params]
 

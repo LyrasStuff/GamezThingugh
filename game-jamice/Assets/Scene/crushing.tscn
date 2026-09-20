@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://c5r0n3s3neyxc"]
+
+[ext_resource type="Texture2D" uid="uid://b6emo8gfa4tyo" path="res://Assets/Sprites/TilemapIce.png" id="1_0ejlh"]
+[ext_resource type="PackedScene" uid="uid://dlblqwspdxt6x" path="res://Assets/Scene/killzone.tscn" id="2_goich"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yeiif"]
+size = Vector2(6, 5)
+
+[node name="crushing" type="AnimatableBody2D" unique_id=1576671917]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=64117641]
+texture = ExtResource("1_0ejlh")
+region_enabled = true
+region_rect = Rect2(0, 0, 49, 32)
+
+[node name="Sprite2D5" type="Sprite2D" parent="Sprite2D" unique_id=146262866]
+position = Vector2(15.5, 24)
+texture = ExtResource("1_0ejlh")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=2116893406]
+position = Vector2(15.5, 8)
+texture = ExtResource("1_0ejlh")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D" unique_id=147218111]
+position = Vector2(-0.5, 24)
+texture = ExtResource("1_0ejlh")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D" unique_id=1668242500]
+position = Vector2(-16.5, 8)
+texture = ExtResource("1_0ejlh")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Sprite2D6" type="Sprite2D" parent="Sprite2D" unique_id=260693863]
+position = Vector2(-16.5, 24)
+texture = ExtResource("1_0ejlh")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=495978860]
+position = Vector2(0, -13)
+shape = SubResource("RectangleShape2D_yeiif")
+
+[node name="killzone" parent="." unique_id=183546736 instance=ExtResource("2_goich")]
+position = Vector2(-39, -13)
