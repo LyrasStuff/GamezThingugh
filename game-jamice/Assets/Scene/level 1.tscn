@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dlblqwspdxt6x" path="res://Assets/Scene/killzone.tscn" id="4_qesy1"]
 [ext_resource type="PackedScene" uid="uid://bnt6ydaog2b84" path="res://Assets/Scene/bigplat.tscn" id="5_w8bpv"]
 [ext_resource type="PackedScene" uid="uid://bsj5tmct7kw22" path="res://Assets/Scene/platform.tscn" id="6_2c5r6"]
+[ext_resource type="PackedScene" uid="uid://dto42v384yvf3" path="res://Assets/Scene/iceman.tscn" id="6_4y0wu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4y0wu"]
 texture = ExtResource("3_2c5r6")
@@ -730,5 +731,8 @@ position = Vector2(1541, -1000)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platform7" unique_id=308368574]
 libraries/ = SubResource("AnimationLibrary_mp2x2")
 autoplay = &"sidemove1"
+
+[node name="Iceman" parent="." unique_id=1635359752 instance=ExtResource("6_4y0wu")]
+position = Vector2(1135, -993)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
