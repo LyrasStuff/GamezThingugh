@@ -121,7 +121,10 @@ tile_map_data = PackedByteArray("AAAEABQAAAAAAAAAAAAFABQAAAAAAAAAAAAGABQAAAAAAAA
 tile_set = SubResource("TileSet_2q7uc")
 
 [node name="Iceman" parent="." unique_id=1635359752 instance=ExtResource("4_x6x86")]
-position = Vector2(97, 311)
+position = Vector2(87, 311)
+
+[node name="Camera2D" type="Camera2D" parent="Iceman" unique_id=380339495]
+zoom = Vector2(2.5, 2.5)
 
 [node name="killzone" parent="." unique_id=183546736 instance=ExtResource("3_pxeqt")]
 position = Vector2(206, 348)
