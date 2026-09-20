@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d2foacjw7p7u7"]
+
+[ext_resource type="Texture2D" uid="uid://iowqnae37grb" path="res://Assets/Sprites/Buzzsaw.png" id="1_k0st4"]
+[ext_resource type="PackedScene" uid="uid://dlblqwspdxt6x" path="res://Assets/Scene/killzone.tscn" id="2_7nfxq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 9.055386
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_57qmd"]
+radius = 3.0
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" unique_id=2099929317]
+
+[node name="Buzzsaw" type="Sprite2D" parent="." unique_id=1237027995]
+position = Vector2(-4.7683716e-07, 0)
+texture = ExtResource("1_k0st4")
+
+[node name="killzone" parent="." unique_id=183546736 instance=ExtResource("2_7nfxq")]
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="killzone" unique_id=2022874535]
+light_mask = 2
+visibility_layer = 2
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=402955217]
+light_mask = 3
+visibility_layer = 3
+shape = SubResource("CircleShape2D_57qmd")

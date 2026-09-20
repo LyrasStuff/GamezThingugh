@@ -1,0 +1,84 @@
+[gd_scene format=4 uid="uid://b5yvm1wxmjpoq"]
+
+[ext_resource type="Texture2D" uid="uid://b6emo8gfa4tyo" path="res://Assets/Sprites/TilemapIce.png" id="1_agw2g"]
+[ext_resource type="PackedScene" uid="uid://d2foacjw7p7u7" path="res://Assets/Scene/SawBlade.tscn" id="2_7mndr"]
+[ext_resource type="PackedScene" uid="uid://dto42v384yvf3" path="res://Assets/Scene/iceman.tscn" id="3_vvyup"]
+[ext_resource type="PackedScene" uid="uid://dlblqwspdxt6x" path="res://Assets/Scene/killzone.tscn" id="4_cfwtk"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mndr"]
+texture = ExtResource("1_agw2g")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:3/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+8:0/size_in_atlas = Vector2i(4, 5)
+8:0/0 = 0
+8:5/size_in_atlas = Vector2i(4, 7)
+8:5/0 = 0
+0:3/size_in_atlas = Vector2i(3, 2)
+0:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_yf5fn"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_7mndr")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
+
+[node name="Node2D" type="Node2D" unique_id=821659896]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1123163876]
+tile_map_data = PackedByteArray("AAAHAAkAAAABAAAAAAAIAAkAAAABAAAAAAAGAAkAAAABAAAAAAAFAAkAAAABAAAAAAAEAAgAAAAGAAMAAAAAAAgAAAAEAAMAAAADAAgAAAAFAAMAAAACAAgAAAAFAAMAAAABAAgAAAAFAAMAAAAEAAYAAAAGAAIAAAAAAAYAAAAEAAIAAAACAAYAAAAFAAIAAAAJAAkAAAABAAAAAAAKAAkAAAABAAAAAAAEAAkAAAABAAAAAAADAAkAAAABAAAAAAACAAkAAAABAAAAAAABAAkAAAABAAAAAAAAAAkAAAABAAAAAAD//wkAAAABAAAAAAD//woAAAABAAEAAAD//wsAAAABAAEAAAD//wwAAAABAAEAAAD//w0AAAABAAEAAAD//w4AAAABAAEAAAAAAAoAAAABAAEAAAAAAAsAAAABAAEAAAAAAAwAAAABAAEAAAAAAA0AAAABAAEAAAAAAA4AAAABAAEAAAABAAoAAAABAAEAAAABAAsAAAABAAEAAAABAAwAAAABAAEAAAABAA0AAAABAAEAAAABAA4AAAABAAEAAAACAAoAAAABAAEAAAACAAsAAAABAAEAAAACAAwAAAABAAEAAAACAA0AAAABAAEAAAACAA4AAAABAAEAAAADAAoAAAABAAEAAAADAAsAAAABAAEAAAADAAwAAAABAAEAAAADAA0AAAABAAEAAAADAA4AAAABAAEAAAAEAAoAAAABAAEAAAAEAAsAAAABAAEAAAAEAAwAAAABAAEAAAAEAA0AAAABAAEAAAAEAA4AAAABAAEAAAAFAAoAAAABAAEAAAAFAAsAAAABAAEAAAAFAAwAAAABAAEAAAAFAA0AAAABAAEAAAAFAA4AAAABAAEAAAAGAAoAAAABAAEAAAAGAAsAAAABAAEAAAAGAAwAAAABAAEAAAAGAA0AAAABAAEAAAAGAA4AAAABAAEAAAAHAAoAAAABAAEAAAAHAAsAAAABAAEAAAAHAAwAAAABAAEAAAAHAA0AAAABAAEAAAAHAA4AAAABAAEAAAAIAAoAAAABAAEAAAAIAAsAAAABAAEAAAAIAAwAAAABAAEAAAAIAA0AAAABAAEAAAAIAA4AAAABAAEAAAAJAAoAAAABAAEAAAAJAAsAAAABAAEAAAAJAAwAAAABAAEAAAAJAA0AAAABAAEAAAAJAA4AAAABAAEAAAAKAAoAAAABAAEAAAAKAAsAAAABAAEAAAAKAAwAAAABAAEAAAAKAA0AAAABAAEAAAAKAA4AAAABAAEAAAALAAoAAAABAAEAAAALAAsAAAABAAEAAAALAAwAAAABAAEAAAALAA0AAAABAAEAAAALAA4AAAABAAEAAAALAAkAAAACAAAAAAAAAAcAAAAEAAEAAAAEAAcAAAAGAAEAAAAAAAUAAAAEAAEAAAAEAAUAAAAGAAEAAAAAAAQAAAAEAAIAAAAEAAQAAAAGAAIAAAAAAAMAAAAEAAEAAAAEAAMAAAAGAAEAAAAFAAIAAAAHAAAAAAAEAAIAAAAGAAAAAAAAAAIAAAAEAAAAAAD//wIAAAADAAAAAAABAAIAAAAFAAAAAAACAAIAAAAFAAAAAAADAAIAAAAFAAAAAAACAAQAAAAFAAIAAAABAAMAAAAFAAEAAAACAAMAAAAFAAEAAAADAAMAAAAFAAEAAAADAAQAAAAFAAEAAAABAAQAAAAFAAEAAAABAAUAAAAFAAEAAAABAAYAAAAFAAEAAAABAAcAAAAFAAEAAAACAAcAAAAFAAEAAAADAAcAAAAFAAEAAAADAAYAAAAFAAEAAAADAAUAAAAFAAEAAAACAAUAAAAFAAEAAAAQAAoAAAAAAAAAAAARAAoAAAABAAAAAAASAAoAAAABAAAAAAATAAoAAAACAAAAAAAYAAkAAAAAAAAAAAAZAAkAAAABAAAAAAAaAAkAAAABAAAAAAAbAAkAAAABAAAAAAAcAAkAAAABAAAAAAAdAAkAAAACAAAAAAAYAAoAAAABAAEAAAAZAAsAAAABAAEAAAAaAAwAAAABAAEAAAAbAA0AAAABAAEAAAAcAA4AAAABAAEAAAAYAA4AAAABAAEAAAAZAA4AAAABAAEAAAAaAA4AAAABAAEAAAAbAA4AAAABAAEAAAAdAA4AAAABAAEAAAAdAA0AAAABAAEAAAAdAAwAAAABAAEAAAAdAAsAAAABAAEAAAAdAAoAAAABAAEAAAAcAAoAAAABAAEAAAAbAAoAAAABAAEAAAAaAAoAAAABAAEAAAAZAAoAAAABAAEAAAAYAAsAAAABAAEAAAAYAAwAAAABAAEAAAAYAA0AAAABAAEAAAAZAA0AAAABAAEAAAAaAA0AAAABAAEAAAAZAAwAAAABAAEAAAAaAAsAAAABAAEAAAAbAAsAAAABAAEAAAAbAAwAAAABAAEAAAAcAAsAAAABAAEAAAAcAAwAAAABAAEAAAAcAA0AAAABAAEAAAA=")
+tile_set = SubResource("TileSet_yf5fn")
+
+[node name="Obstacles" type="Node" parent="." unique_id=1952049946]
+
+[node name="Sawblade" parent="Obstacles" unique_id=2099929317 instance=ExtResource("2_7mndr")]
+position = Vector2(287, 128)
+
+[node name="Iceman" parent="." unique_id=1635359752 instance=ExtResource("3_vvyup")]
+position = Vector2(132, 74)
+
+[node name="killzone" parent="." unique_id=183546736 instance=ExtResource("4_cfwtk")]
+position = Vector2(184, 248)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=499867530]
+position = Vector2(-11, -5)
+shape = SubResource("WorldBoundaryShape2D_g4v7s")
