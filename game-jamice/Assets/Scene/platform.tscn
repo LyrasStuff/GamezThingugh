@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://bsj5tmct7kw22"]
 
-[ext_resource type="Texture2D" uid="uid://bux56fkl27523" path="res://Assets/Sprites/PlatformerTilesetTemplate_Tileset.png" id="1_p7ult"]
+[ext_resource type="Texture2D" uid="uid://b6emo8gfa4tyo" path="res://Assets/Sprites/TilemapIce.png" id="1_ntmyy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yeiif"]
 size = Vector2(48, 16)
 
 [node name="platform" type="AnimatableBody2D" unique_id=745058158]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1684777096]
-texture = ExtResource("1_p7ult")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1613759941]
+texture = ExtResource("1_ntmyy")
 region_enabled = true
-region_rect = Rect2(16, 0, 48, 16)
+region_rect = Rect2(0, 0, 48, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=136714948]
 shape = SubResource("RectangleShape2D_yeiif")

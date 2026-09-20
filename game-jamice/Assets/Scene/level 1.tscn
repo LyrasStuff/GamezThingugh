@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b6emo8gfa4tyo" path="res://Assets/Sprites/TilemapIce.png" id="3_2c5r6"]
 [ext_resource type="PackedScene" uid="uid://bsj5tmct7kw22" path="res://Assets/Scene/platform.tscn" id="3_sy0u2"]
 [ext_resource type="PackedScene" uid="uid://dlblqwspdxt6x" path="res://Assets/Scene/killzone.tscn" id="4_qesy1"]
-[ext_resource type="PackedScene" uid="uid://c2quam205kyxq" path="res://Assets/Scene/spike.tscn" id="6_2c5r6"]
+[ext_resource type="PackedScene" uid="uid://c7rdqawktfy5v" path="res://Assets/Scene/DEATH.tscn" id="6_2c5r6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4y0wu"]
 texture = ExtResource("3_2c5r6")
@@ -255,64 +255,7 @@ shape = SubResource("WorldBoundaryShape2D_vnn0b")
 position = Vector2(-2510, -876)
 shape = SubResource("RectangleShape2D_yeiif")
 
-[node name="spike" parent="." unique_id=1348715250 instance=ExtResource("6_2c5r6")]
-position = Vector2(180, 39)
-scale = Vector2(2, 2)
-
-[node name="spike2" parent="." unique_id=2050342116 instance=ExtResource("6_2c5r6")]
-position = Vector2(1124, -73)
-scale = Vector2(2, 2)
-
-[node name="spike3" parent="." unique_id=1794884596 instance=ExtResource("6_2c5r6")]
-position = Vector2(388, 39)
-scale = Vector2(2, 2)
-
-[node name="spike4" parent="." unique_id=1074864244 instance=ExtResource("6_2c5r6")]
-position = Vector2(917, -9)
-scale = Vector2(2, 2)
-
-[node name="spike5" parent="." unique_id=14847859 instance=ExtResource("6_2c5r6")]
-position = Vector2(308, -169)
-scale = Vector2(2, 2)
-
-[node name="spike6" parent="." unique_id=1702194555 instance=ExtResource("6_2c5r6")]
-position = Vector2(548, 39)
-scale = Vector2(2, 2)
-
-[node name="spike7" parent="." unique_id=704228730 instance=ExtResource("6_2c5r6")]
-position = Vector2(-428, -297)
-scale = Vector2(2, 2)
-
-[node name="spike8" parent="." unique_id=1664749660 instance=ExtResource("6_2c5r6")]
-position = Vector2(-796, -873)
-scale = Vector2(2, 2)
-
-[node name="spike9" parent="." unique_id=1403277099 instance=ExtResource("6_2c5r6")]
-position = Vector2(-892, -873)
-scale = Vector2(2, 2)
-
-[node name="spike10" parent="." unique_id=1144711977 instance=ExtResource("6_2c5r6")]
-position = Vector2(-1484, -873)
-scale = Vector2(2, 2)
-
-[node name="spike11" parent="." unique_id=1061359215 instance=ExtResource("6_2c5r6")]
-position = Vector2(-1404, -873)
-scale = Vector2(2, 2)
-
-[node name="spike12" parent="." unique_id=900356013 instance=ExtResource("6_2c5r6")]
-position = Vector2(-2316, -873)
-scale = Vector2(2, 2)
-
-[node name="spike13" parent="." unique_id=1278668733 instance=ExtResource("6_2c5r6")]
-position = Vector2(-2396, -873)
-scale = Vector2(2, 2)
-
-[node name="spike14" parent="." unique_id=1611184265 instance=ExtResource("6_2c5r6")]
-position = Vector2(-2460, -873)
-scale = Vector2(2, 2)
-
-[node name="spike15" parent="." unique_id=640485039 instance=ExtResource("6_2c5r6")]
-position = Vector2(-1548, -873)
-scale = Vector2(2, 2)
+[node name="DEATH" parent="." unique_id=1400264015 instance=ExtResource("6_2c5r6")]
+position = Vector2(93, 22)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
