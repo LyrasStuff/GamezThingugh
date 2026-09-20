@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dto42v384yvf3" path="res://Assets/Scene/iceman.tscn" id="4_x6x86"]
 [ext_resource type="PackedScene" uid="uid://ds3a5yuwc3ne2" path="res://Assets/Scene/fixed spike.tscn" id="5_ifebt"]
 [ext_resource type="PackedScene" uid="uid://ptc1owmxp23j" path="res://Assets/Scene/half block.tscn" id="7_x6x86"]
+[ext_resource type="Texture2D" uid="uid://mi2j1e5fj0ec" path="res://Assets/Sprites/Big Chilly.png" id="8_0ayg4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ifebt"]
 texture = ExtResource("2_e7lgy")
@@ -100,6 +101,7 @@ sources/0 = SubResource("TileSetAtlasSource_ifebt")
 distance = -34.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d20xd"]
+size = Vector2(52, 20)
 
 [node name="lv2" type="Node2D" unique_id=1885642762]
 position = Vector2(-2, 0)
@@ -107,10 +109,10 @@ script = ExtResource("1_e7lgy")
 
 [node name="background" type="TextureRect" parent="." unique_id=357385479]
 z_index = -4096
-offset_left = -162.0
-offset_top = -243.0
-offset_right = 1494.0
-offset_bottom = 1091.0
+offset_left = -179.0
+offset_top = -556.0
+offset_right = 1477.0
+offset_bottom = 900.0
 texture = ExtResource("2_kcff2")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1646413503]
@@ -119,7 +121,7 @@ tile_map_data = PackedByteArray("AAAEABQAAAAAAAAAAAAFABQAAAAAAAAAAAAGABQAAAAAAAA
 tile_set = SubResource("TileSet_2q7uc")
 
 [node name="Iceman" parent="." unique_id=1635359752 instance=ExtResource("4_x6x86")]
-position = Vector2(93, 309)
+position = Vector2(97, 311)
 
 [node name="killzone" parent="." unique_id=183546736 instance=ExtResource("3_pxeqt")]
 position = Vector2(206, 348)
@@ -131,7 +133,7 @@ shape = SubResource("WorldBoundaryShape2D_d20xd")
 [node name="Area2D" type="Area2D" parent="." unique_id=1035569364]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1045139564]
-position = Vector2(22, 52)
+position = Vector2(21, 52)
 shape = SubResource("RectangleShape2D_d20xd")
 
 [node name="spike 2" parent="." unique_id=318374261 instance=ExtResource("5_ifebt")]
@@ -142,7 +144,7 @@ position = Vector2(312, 231)
 rotation = -1.5707964
 
 [node name="spike 13" parent="." unique_id=1658601705 instance=ExtResource("5_ifebt")]
-position = Vector2(513, 280)
+position = Vector2(512, 280)
 rotation = -1.5707964
 
 [node name="spike 14" parent="." unique_id=1972469083 instance=ExtResource("5_ifebt")]
@@ -167,13 +169,13 @@ position = Vector2(817, 286)
 position = Vector2(1010, 190)
 
 [node name="spike 16" parent="." unique_id=590702167 instance=ExtResource("5_ifebt")]
-position = Vector2(918, 63)
+position = Vector2(918, 62)
 
 [node name="spike 17" parent="." unique_id=687758356 instance=ExtResource("5_ifebt")]
-position = Vector2(955, 63)
+position = Vector2(955, 62)
 
 [node name="spike 18" parent="." unique_id=208041396 instance=ExtResource("5_ifebt")]
-position = Vector2(882, 63)
+position = Vector2(882, 62)
 
 [node name="spike 6" parent="." unique_id=1768402523 instance=ExtResource("5_ifebt")]
 position = Vector2(500, 174)
@@ -218,17 +220,22 @@ offset_bottom = 16.0
 [node name="Label2" type="Label" parent="." unique_id=1358097255]
 offset_left = 60.0
 offset_top = 9.0
-offset_right = 126.0
+offset_right = 146.0
 offset_bottom = 40.0
 theme_override_font_sizes/font_size = 10
-text = "ICE ICE BABY
-(pls dont sue)"
+text = "PARTY'S STARTED 
+ICEMAN!"
 
 [node name="Panel" type="Panel" parent="Label2" unique_id=315990376]
 z_index = -10
 layout_mode = 0
-offset_left = -3.0
-offset_right = 68.0
-offset_bottom = 40.0
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 91.0
+offset_bottom = 35.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=40913065]
+position = Vector2(19, 63)
+texture = ExtResource("8_0ayg4")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
