@@ -48,6 +48,9 @@ radius = 6.0
 [node name="Iceman" type="CharacterBody2D" unique_id=1635359752]
 script = ExtResource("1_07l2e")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1571408853]
+zoom = Vector2(2.5, 2.5)
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1352185143]
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"idle"
