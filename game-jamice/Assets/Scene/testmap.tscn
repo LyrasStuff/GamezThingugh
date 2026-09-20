@@ -415,6 +415,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ktkki")
 
 [node name="Test lvl" type="Node2D" unique_id=2129157539]
+metadata/_edit_vertical_guides_ = [454.0]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=77988125]
 position = Vector2(-116, 79)
@@ -427,7 +428,8 @@ tile_map_data = PackedByteArray("AAAjABoAAAACAAIAAAAkABoAAAABAAAAAAAlABoAAAABAAA
 tile_set = SubResource("TileSet_2q7uc")
 
 [node name="CharacterBody2D" parent="." unique_id=1130332835 instance=ExtResource("2_kkvtt")]
-position = Vector2(501, 461)
+position = Vector2(511, 481)
 
 [node name="Sun" parent="." unique_id=174981267 instance=ExtResource("3_2q7uc")]
-position = Vector2(534, 319)
+visible = false
+position = Vector2(598, 279)

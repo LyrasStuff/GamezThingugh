@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://c7thu1w1rby6y" path="res://Assets/Scene/lv_3.gd" id="1_6fo6b"]
 [ext_resource type="PackedScene" uid="uid://l5jh0rr7v56v" path="res://Assets/Scene/character_body_2d.tscn" id="2_7m3xg"]
 [ext_resource type="PackedScene" uid="uid://dlblqwspdxt6x" path="res://Assets/Scene/killzone.tscn" id="3_7m3xg"]
-[ext_resource type="PackedScene" uid="uid://c2quam205kyxq" path="res://Assets/Scene/spike.tscn" id="5_g3f7d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6fo6b"]
 texture = ExtResource("1_3ibpy")
@@ -233,9 +232,6 @@ script = ExtResource("1_6fo6b")
 tile_map_data = PackedByteArray("AAADABsAAAAAAAAAAAAEABsAAAAAAAAAAAAFABsAAAAAAAAAAAAGABsAAAAAAAAAAAAHABsAAAAAAAAAAAAIABsAAAAAAAAAAAAJABsAAAAAAAAAAAAKABsAAAAAAAAAAAAOABkAAAAAAAAAAAAPABkAAAAAAAAAAAAQABkAAAAAAAAAAAAQABgAAAAAAAAAAAARABgAAAAAAAAAAAASABgAAAAAAAAAAAASABcAAAAAAAAAAAATABcAAAAAAAAAAAATABYAAAAAAAAAAAAUABYAAAAAAAAAAAAMABoAAAAAAAAAAAAXABEAAAAAAAAAAAAYABEAAAAAAAAAAAAZABEAAAAAAAAAAAAaABEAAAAAAAAAAAARABIAAAAAAAAAAAAbAA4AAAAAAAAAAAAcAA4AAAAAAAAAAAAdAA4AAAAAAAAAAAAeAA4AAAAAAAAAAAAfAA4AAAAAAAAAAAAgAA4AAAAAAAAAAAAhAA4AAAAAAAAAAAAiAA4AAAAAAAAAAAAjAA4AAAAAAAAAAAAgABIAAAAAAAAAAAAhABIAAAAAAAAAAAAnABAAAAAAAAAAAAAoABAAAAAAAAAAAAApABAAAAAAAAAAAAAmABAAAAAAAAAAAAAlABAAAAAAAAAAAAAqABcAAAAAAAAAAAArABcAAAAAAAAAAAAsABcAAAAAAAAAAAAtABcAAAAAAAAAAAAuABcAAAAAAAAAAAApABwAAAAAAAAAAAAoABwAAAAAAAAAAAAnABwAAAAAAAAAAAAmABwAAAAAAAAAAAAlABwAAAAAAAAAAAAkABwAAAAAAAAAAAAiABkAAAAAAAAAAAAhABkAAAAAAAAAAAAgABkAAAAAAAAAAAAbABwAAAAAAAAAAAAXAB4AAAAAAAAAAAASACAAAAAAAAAAAAAVACQAAAAAAAAAAAAZACMAAAAAAAAAAAAgACMAAAAAAAAAAAAhACMAAAAAAAAAAAAmACIAAAAAAAAAAAAnACIAAAAAAAAAAAAoACIAAAAAAAAAAAApACIAAAAAAAAAAAAqACIAAAAAAAAAAAAuACAAAAAAAAAAAAAxAB4AAAAAAAAAAAA0ABsAAAAAAAAAAAA2ABgAAAAAAAAAAAA3ABgAAAAAAAAAAAA4ABgAAAAAAAAAAAA5ABgAAAAAAAAAAAA6ABgAAAAAAAAAAAA6ABkAAAAAAAAAAAA7ABkAAAAAAAAAAAA8ABkAAAAAAAAAAAA9ABkAAAAAAAAAAAA+ABkAAAAAAAAAAAA/ABkAAAAAAAAAAABAABkAAAAAAAAAAAA2ABUAAAAAAAAAAAA3ABUAAAAAAAAAAAA4ABUAAAAAAAAAAAA5ABUAAAAAAAAAAAA5ABYAAAAAAAAAAAA6ABYAAAAAAAAAAAA7ABYAAAAAAAAAAAA8ABYAAAAAAAAAAAA9ABYAAAAAAAAAAAA+ABYAAAAAAAAAAAA/ABYAAAAAAAAAAABAABYAAAAAAAAAAABDABgAAAAAAAAAAABFABQAAAAAAAAAAAA1ABEAAAAAAAAAAAAyAA4AAAAAAAAAAAAtAAsAAAAAAAAAAAAnAAgAAAAAAAAAAAAjAAcAAAAAAAAAAAAiAAcAAAAAAAAAAAAhAAcAAAAAAAAAAAAgAAcAAAAAAAAAAAAfAAcAAAAAAAAAAAAeAAcAAAAAAAAAAAAdAAcAAAAAAAAAAAAcAAcAAAAAAAAAAAAiABIAAAAAAAAAAAAjABIAAAAAAAAAAAAkABIAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_d20xd")
 
-[node name="Iceman" parent="." unique_id=1130332835 instance=ExtResource("2_7m3xg")]
-position = Vector2(105, 425)
-
 [node name="killzone" parent="." unique_id=183546736 instance=ExtResource("3_7m3xg")]
 position = Vector2(240, 606)
 
@@ -249,40 +245,7 @@ shape = SubResource("WorldBoundaryShape2D_d20xd")
 position = Vector2(482, 100)
 shape = SubResource("RectangleShape2D_d20xd")
 
-[node name="spike" parent="." unique_id=1348715250 instance=ExtResource("5_g3f7d")]
-position = Vector2(196, 407)
-scale = Vector2(2, 2)
-
-[node name="spike2" parent="." unique_id=372824180 instance=ExtResource("5_g3f7d")]
-position = Vector2(325, 342)
-scale = Vector2(2, 2)
-
-[node name="spike3" parent="." unique_id=1485190361 instance=ExtResource("5_g3f7d")]
-position = Vector2(438, 215)
-scale = Vector2(2, 2)
-
-[node name="spike4" parent="." unique_id=1302977993 instance=ExtResource("5_g3f7d")]
-position = Vector2(661, 246)
-scale = Vector2(2, 2)
-
-[node name="spike5" parent="." unique_id=2122265855 instance=ExtResource("5_g3f7d")]
-position = Vector2(596, 440)
-scale = Vector2(2, 2)
-
-[node name="spike6" parent="." unique_id=811344013 instance=ExtResource("5_g3f7d")]
-position = Vector2(515, 549)
-scale = Vector2(2, 2)
-
-[node name="spike7" parent="." unique_id=1600742097 instance=ExtResource("5_g3f7d")]
-position = Vector2(532, 103)
-scale = Vector2(2, 2)
-
-[node name="spike8" parent="." unique_id=794008237 instance=ExtResource("5_g3f7d")]
-position = Vector2(515, 549)
-scale = Vector2(2, 2)
-
-[node name="spike9" parent="." unique_id=745186977 instance=ExtResource("5_g3f7d")]
-position = Vector2(979, 343)
-scale = Vector2(2, 2)
+[node name="Iceman" parent="." unique_id=1130332835 instance=ExtResource("2_7m3xg")]
+position = Vector2(97, 424)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
