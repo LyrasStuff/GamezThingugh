@@ -60,6 +60,64 @@ texture = ExtResource("1_agw2g")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7mndr")
 
+[sub_resource type="Animation" id="Animation_fg7rl"]
+resource_name = "Moving 1"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(222, -0.25, 0, 0.25, 0, 222, -0.25, 0, 0, 0),
+"times": PackedFloat32Array(0, 1.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(103, -0.25, 0, 0.25, 0, 206, -0.25, -17.166666, 0, 0),
+"times": PackedFloat32Array(0, 1.5)
+}
+
+[sub_resource type="Animation" id="Animation_u03uj"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(222, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(103, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qdwnn"]
+_data = {
+&"Moving 1": SubResource("Animation_fg7rl"),
+&"RESET": SubResource("Animation_u03uj")
+}
+
 [sub_resource type="Animation" id="Animation_cfwtk"]
 resource_name = "Move"
 length = 1.5
@@ -97,7 +155,7 @@ tracks/0/path = NodePath(".:position:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(2, 2),
+"handle_modes": PackedInt32Array(0, 2),
 "points": PackedFloat32Array(362, -0.25, 0, 0.25, 0, 362, -0.25, 0, 0, 0),
 "times": PackedFloat32Array(0, 1.5)
 }
@@ -129,12 +187,12 @@ tile_set = SubResource("TileSet_yf5fn")
 
 [node name="Obstacles" type="Node" parent="." unique_id=1952049946]
 
-[node name="Sawblade" parent="Obstacles" unique_id=2099929317 instance=ExtResource("2_7mndr")]
-position = Vector2(362, 205)
+[node name="sawblade" parent="Obstacles" unique_id=2099929317 instance=ExtResource("2_7mndr")]
+position = Vector2(222, 103)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Obstacles/Sawblade" unique_id=1043839267]
-libraries/ = SubResource("AnimationLibrary_3lck3")
-autoplay = &"Move"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Obstacles/sawblade" unique_id=1873704170]
+libraries/ = SubResource("AnimationLibrary_qdwnn")
+autoplay = &"Moving 1"
 
 [node name="Sawblade2" parent="Obstacles" unique_id=506262829 instance=ExtResource("2_7mndr")]
 position = Vector2(362, 205)
