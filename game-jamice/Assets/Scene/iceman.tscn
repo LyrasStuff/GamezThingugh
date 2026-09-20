@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dto42v384yvf3"]
+
+[ext_resource type="Script" uid="uid://cbsux8x2jwath" path="res://Assets/Scripts/character_movements.gd" id="1_07l2e"]
+[ext_resource type="Texture2D" uid="uid://c1h0vliouiux4" path="res://Assets/Sprites/Sprite-0002-Sheet-export.png" id="2_bjup4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4kmi"]
+atlas = ExtResource("2_bjup4")
+region = Rect2(48, 32, 48, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmtp2"]
+atlas = ExtResource("2_bjup4")
+region = Rect2(48, 0, 48, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxn5c"]
+atlas = ExtResource("2_bjup4")
+region = Rect2(48, 16, 48, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4kmi")
+}],
+"loop": 1,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bmtp2")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxn5c")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 6.0
+
+[node name="Iceman" type="CharacterBody2D" unique_id=1635359752]
+script = ExtResource("1_07l2e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1352185143]
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=716731182]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="CoyoteTimer" type="Timer" parent="." unique_id=360886284]
+
+[node name="JumpBufferTimer" type="Timer" parent="." unique_id=885511407]
