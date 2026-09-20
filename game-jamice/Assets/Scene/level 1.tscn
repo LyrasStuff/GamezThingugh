@@ -872,6 +872,9 @@ autoplay = &"sidemove1"
 [node name="Iceman" parent="." unique_id=1635359752 instance=ExtResource("6_4y0wu")]
 position = Vector2(16.5, -41)
 
+[node name="Camera2D2" type="Camera2D" parent="Iceman" unique_id=1556866365]
+zoom = Vector2(2.5, 2.5)
+
 [node name="crushing" parent="." unique_id=1576671917 instance=ExtResource("7_4y0wu")]
 position = Vector2(1832.5, -1100)
 
